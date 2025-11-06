@@ -1,4 +1,4 @@
-# Wallstone
+# Mulberry
 
 ## Template Integrations
 
@@ -39,6 +39,7 @@ All commands are run from the root of the project, from a terminal:
 Learn more - Explore more through Astro's official [documentation](https://docs.astro.build).
 
 ---
+
 ## Components
 
 - Reusable components
@@ -91,8 +92,11 @@ Learn more - Explore more through Astro's official [documentation](https://docs.
 Your content goes here
 </Wrapper>
 ```
+
 ---
 
 ### [Support](https://lexingtonthemes.com/legal/support/)
+
 ### [Documentation](https://lexingtonthemes.com/documentation/)
+
 ### [Get your bundle](https://lexingtonthemes.com)

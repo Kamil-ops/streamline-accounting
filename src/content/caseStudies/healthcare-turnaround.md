@@ -13,7 +13,7 @@ results:
   - label: "Operational Efficiency"
     value: "40% reduction in billing errors"
 testimonial:
-  quote: "Wallstone didn't just fix our books—they transformed our entire financial approach. Our practice is now profitable and positioned for growth."
+  quote: "Mulberry  didn't just fix our books—they transformed our entire financial approach. Our practice is now profitable and positioned for growth."
   author: "Dr. Michael Rodriguez"
   role: "Managing Partner, MedCare Associates"
 image:
@@ -147,4 +147,4 @@ Sound financial management enables better patient care through resource availabi
 
 MedCare Associates now operates as a financially strong, scalable healthcare practice positioned for continued growth and improved patient care. The transformation serves as a model for other healthcare practices facing similar challenges.
 
-_"Wallstone's comprehensive approach transformed our practice from financial distress to stability. We now have the systems and insights needed to grow sustainably while maintaining our commitment to patient care."_ - Dr. Michael Rodriguez, Managing Partner
+_"Mulberry 's comprehensive approach transformed our practice from financial distress to stability. We now have the systems and insights needed to grow sustainably while maintaining our commitment to patient care."_ - Dr. Michael Rodriguez, Managing Partner

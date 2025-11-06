@@ -13,7 +13,7 @@ results:
   - label: "Administrative Costs"
     value: "Reduced from 25% to 15%"
 testimonial:
-  quote: "Wallstone brought professional accounting expertise to our non-profit. Their understanding of grant compliance and non-profit accounting has been crucial to our mission success."
+  quote: "Mulberry  brought professional accounting expertise to our non-profit. Their understanding of grant compliance and non-profit accounting has been crucial to our mission success."
   author: "Maria Gonzalez"
   role: "Executive Director, Community Health Alliance"
 image:
@@ -177,4 +177,4 @@ Modern accounting systems and processes enable non-profits to scale their impact
 
 Community Health Alliance now operates as a model non-profit organization with robust financial systems, complete regulatory compliance, and the capacity to expand its life-saving services to more underserved communities.
 
-_"Wallstone's expertise transformed our organization from compliance nightmares to confident growth. Their non-profit accounting knowledge has been essential to our mission expansion and community impact."_ - Maria Gonzalez, Executive Director
+_"Mulberry 's expertise transformed our organization from compliance nightmares to confident growth. Their non-profit accounting knowledge has been essential to our mission expansion and community impact."_ - Maria Gonzalez, Executive Director

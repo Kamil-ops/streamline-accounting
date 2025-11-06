@@ -13,7 +13,7 @@ results:
   - label: "Funding Round Success"
     value: "Successfully raised $5M"
 testimonial:
-  quote: "Wallstone transformed our financial operations. Their expertise was crucial in our funding success and continues to support our growth."
+  quote: "Mulberry  transformed our financial operations. Their expertise was crucial in our funding success and continues to support our growth."
   author: "Sarah Chen"
   role: "CEO, InnovateTech Solutions"
 image:
@@ -184,4 +184,4 @@ Expert financial guidance helps startups avoid common pitfalls and maximize oppo
 
 InnovateTech Solutions now operates as a well-funded, financially sophisticated technology company with the infrastructure to achieve its ambitious growth objectives and establish market leadership.
 
-_"Wallstone's accounting expertise was the foundation of our startup success. Their systems, tax planning, and funding support transformed us from a promising startup to a funded growth company."_ - Sarah Chen, CEO
+_"Mulberry 's accounting expertise was the foundation of our startup success. Their systems, tax planning, and funding support transformed us from a promising startup to a funded growth company."_ - Sarah Chen, CEO

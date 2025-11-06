@@ -13,7 +13,7 @@ results:
   - label: "Decision Making"
     value: "Monthly performance reports"
 testimonial:
-  quote: "Wallstone's expertise in real estate accounting and tax planning has been invaluable. They've helped us maximize returns and minimize tax liabilities across our entire portfolio."
+  quote: "Mulberry 's expertise in real estate accounting and tax planning has been invaluable. They've helped us maximize returns and minimize tax liabilities across our entire portfolio."
   author: "David Thompson"
   role: "Managing Director, Metropolitan Properties Group"
 image:
@@ -177,4 +177,4 @@ Real estate accounting requires specialized knowledge of tax laws, depreciation,
 
 Metropolitan Properties Group now operates as a financially sophisticated real estate investment firm with optimized portfolio performance, significant tax efficiencies, and the analytical tools needed for continued growth and market leadership.
 
-_"Wallstone's real estate accounting expertise transformed our portfolio management. Their sophisticated financial analysis and tax planning have significantly improved our returns and positioned us for continued success."_ - David Thompson, Managing Director
+_"Mulberry 's real estate accounting expertise transformed our portfolio management. Their sophisticated financial analysis and tax planning have significantly improved our returns and positioned us for continued success."_ - David Thompson, Managing Director

@@ -13,7 +13,7 @@ results:
   - label: "Tax Optimization"
     value: "$75K annual savings"
 testimonial:
-  quote: "Wallstone's strategic financial guidance made our expansion possible. They didn't just do the numbers—they helped us build a sustainable business model."
+  quote: "Mulberry 's strategic financial guidance made our expansion possible. They didn't just do the numbers—they helped us build a sustainable business model."
   author: "Jennifer Walsh"
   role: "Founder & CEO, Urban Fashion Collective"
 image:
@@ -176,4 +176,4 @@ Rapid, well-planned expansion can create significant competitive advantages.
 
 Urban Fashion Collective now operates as a leading regional fashion retailer with a scalable business model, sophisticated financial systems, and the infrastructure for continued growth and market leadership.
 
-_"Wallstone's financial expertise transformed our small boutique into a regional retail chain. Their strategic guidance, tax planning, and operational systems made our ambitious expansion not just possible, but profitable."_ - Jennifer Walsh, Founder & CEO
+_"Mulberry 's financial expertise transformed our small boutique into a regional retail chain. Their strategic guidance, tax planning, and operational systems made our ambitious expansion not just possible, but profitable."_ - Jennifer Walsh, Founder & CEO

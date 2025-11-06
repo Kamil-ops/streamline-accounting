@@ -6,8 +6,9 @@ import BaseHead from "@/components/fundations/head/BaseHead.astro";
 import MainCta from "@/components/ctas/MainCta.astro";
 import Footer from "@/components/global/Footer.astro";
 import Navigation from "@/components/global/Navigation.astro";
-// Hides the  navigation, or footer on selected screens by passing props:
-// <BaseLayout hideNavigation={true} hideFooter={true}>
+// Components
+import Search from "@/components/global/Search.astro";
+
 const {
   hideMainCta = false,
   hideNavigation = false,
@@ -19,7 +20,7 @@ const {
   <head>
     <BaseHead />
   </head>
-  <body class="flex flex-col bg-white min-h-svh pt-20">
+  <body class="flex flex-col bg-white min-h-svh pt-24">
     {!hideNavigation && <Navigation />}
     <main class="grow"><slot /></main>
     {!hideFooter && <MainCta />}

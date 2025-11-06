@@ -13,7 +13,7 @@ results:
   - label: "Inventory Turnover"
     value: "Increased by 40%"
 testimonial:
-  quote: "Wallstone gave us the financial clarity we needed to make better business decisions. Their cost accounting expertise was exactly what our manufacturing operation required."
+  quote: "Mulberry  gave us the financial clarity we needed to make better business decisions. Their cost accounting expertise was exactly what our manufacturing operation required."
   author: "Robert Kim"
   role: "CFO, Precision Manufacturing Inc."
 image:
@@ -171,4 +171,4 @@ Successful cost optimization requires company-wide commitment and cultural chang
 
 Precision Manufacturing Inc. now operates with financial clarity and competitive strength, using sophisticated cost accounting as a foundation for strategic decision-making and sustainable growth.
 
-_"Wallstone transformed our understanding of costs and profitability. We now make decisions based on data rather than guesswork, and our financial performance reflects this change."_ - Robert Kim, CFO
+_"Mulberry transformed our understanding of costs and profitability. We now make decisions based on data rather than guesswork, and our financial performance reflects this change."_ - Robert Kim, CFO

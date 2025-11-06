@@ -31,9 +31,12 @@ const features = [
   },
 ];
 ---
+
 <section>
-  <Wrapper variant="standard" class="py-12 ">
-    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 p-8 lg:p-12 bg-base-50">
+  <Wrapper variant="standard" class="py-12">
+    <div
+      class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 p-8 lg:p-12 bg-base-50"
+    >
       <Image
         src={talk}
         alt="Image"
@@ -44,8 +47,8 @@ const features = [
         class="size-full object-cover object-center aspect-square"
       />
       <div class="flex flex-col">
-        <div >
-          <Kicker variant="default">Why Wallstone Stands Out</Kicker>
+        <div>
+          <Kicker variant="default">Why Mulberry Stands Out</Kicker>
           <Text
             tag="h2"
             variant="displayMD"
@@ -64,9 +67,7 @@ const features = [
             peace of mind.
           </Text>
         </div>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-8 mt-12"
-        >
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-12 gap-x-8 mt-12">
           {
             features.map((feature) => (
               <div>
