@@ -43,7 +43,7 @@ Learn more - Explore more through Astro's official [documentation](https://docs.
 ## Components
 
 - Reusable components
-  This template now includes reusable components, such as the `Text` component:
+  This templatecan you includes reusable components, such as the `Text` component:
 
 - Text Component  
   A versatile and reusable component for handling text across your project, ensuring consistency and easy customization.
