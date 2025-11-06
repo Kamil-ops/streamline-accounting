@@ -31,7 +31,9 @@ const allIndustries = await getCollection("industries");
           different industries
         </Text>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 mt-12 gap-2 p-8 lg:p-12 bg-base-50">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-2 p-8 lg:p-12 bg-base-50"
+      >
         {allIndustries.map((industry) => <IndustryCard industry={industry} />)}
       </div>
     </Wrapper>
