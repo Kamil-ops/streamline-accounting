@@ -1,0 +1,22 @@
+---
+import IndustriesLayout from "@/layouts/IndustriesLayout.astro";
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  const industries = await getCollection("industries");
+  const paths = industries.map((page) => {
+    return {
+      params: { slug: page.slug },
+      props: { page },
+
+      trailingSlash: false,
+    };
+  });
+  return paths;
+}
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<IndustriesLayout frontmatter={page.data}>
+  <Content />
+</IndustriesLayout>

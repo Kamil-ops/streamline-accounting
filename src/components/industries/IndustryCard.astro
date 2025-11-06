@@ -1,0 +1,35 @@
+---
+// Fundations
+import Text from "@/components/fundations/elements/Text.astro";
+// Content
+const { title, summary, url } = {
+  url: "/industries/" + Astro.props.industry.slug,
+  title: Astro.props.industry.data.title,
+  summary: Astro.props.industry.data.summary,
+};
+---
+
+<article
+  class="relative group bg-white flex flex-col overflow-hidden gap-24 lg:gap-62 p-8 h-full justify-between"
+>
+  <a
+    href={url}
+    title={`Learn more: ${title}`}
+    aria-label={`Learn more about: ${title}`}
+    class="absolute inset-0 z-10"></a>
+  <div>
+    <Text tag="h3" variant="displayMD" class="text-base-900 font-display"
+      >{title}</Text
+    >
+    <Text tag="p" variant="textBase" class="text-base-600 mt-4 text-pretty"
+      >{summary}</Text
+    >
+  </div>
+
+  <Text
+    tag="p"
+    variant="textSM"
+    class="uppercase font-medium text-base-900 group-hover:text-accent-400 mt-4"
+    >Read further</Text
+  >
+</article>

@@ -1,17 +1,16 @@
 ---
 name: David Lee
-role: Fashion & Design Editor
+role: Senior CPA & Partner
 bio: |
-  David Lee is a fashion writer with a focus on sustainable design practices. He writes about the intersection of culture and personal style, offering insights on how the fashion industry is changing.
+  David Lee is a Certified Public Accountant with over 15 years of experience in corporate taxation and financial advisory. He specializes in tax planning strategies for businesses and high-net-worth individuals.
 
-  He believes in promoting eco-friendly choices and ethical production methods. His articles often highlight the role of creativity and culture in shaping modern fashion trends.
+  He leads our tax advisory practice, helping clients navigate complex tax regulations while maximizing their financial efficiency. His expertise includes international tax planning, mergers and acquisitions, and succession planning.
 
-  David’s work has been featured in top industry magazines, and he continues to be a leading voice for sustainability in the fashion world.
+  David holds a Master's in Accounting from a top-tier university and is a member of the American Institute of CPAs. He frequently speaks at industry conferences and contributes to financial publications.
 image:
-  url: "/src/images/team/1.jpeg"
-  alt: "#_"
+  url: "/src/images/team/david.png"
+  alt: "David Lee - Senior CPA & Partner"
 socials:
-  twitter: "#_"
-  website: "#_"
   linkedin: "#_"
+  email: "#_"
 ---

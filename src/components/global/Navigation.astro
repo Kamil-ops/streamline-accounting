@@ -1,6 +1,78 @@
 ---
+// Assets
+import Logo from "@/components/assets/Logo.astro";
+// Fundations
+import Button from "@/components/fundations/elements/Button.astro";
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Icons
+import MenuToggle from "@/components/fundations/icons/Plus.astro";
+// Components
+import Megamenu from "@/components/global/Megamenu.astro";
 ---
-<header>
-  <Wrapper variant="standard" class="bg-white"> Navigation </Wrapper>
+
+<header
+  class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-base-100"
+>
+  <Wrapper variant="standard">
+    <nav class="grid grid-cols-2 lg:grid-cols-3 items-center py-4">
+      <div class="flex justify-end md:justify-start">
+        <button
+          id="megamenu-trigger"
+          class="flex items-center space-x-1 group text-base-900 font-medium focus:outline-none"
+          aria-label="Toggle megamenu"
+        >
+          <span>Menu</span>
+          <MenuToggle
+            size="base"
+            class="transition-transform duration-500"
+            id="menu-toggle-icon"
+          />
+        </button>
+      </div>
+      <div class="flex md:justify-center order-first md:order-none">
+        <a href="/" class="text-base-900">
+          <Logo class="h-8 text-base-900" />
+        </a>
+      </div>
+      <div class="hidden md:flex justify-end">
+        <Button variant="default" size="xs" isLink={true} href="#_">
+          Buy Wallstone
+        </Button>
+      </div>
+    </nav>
+    <Megamenu />
+  </Wrapper>
 </header>
+<script>
+  // Megamenu toggle functionality
+  const megamenuTrigger = document.getElementById("megamenu-trigger");
+  const megamenu = document.getElementById("megamenu");
+  const menuToggleIcon = document.getElementById("menu-toggle-icon");
+  // Desktop megamenu toggle
+  if (megamenuTrigger && megamenu) {
+    megamenuTrigger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      megamenu.classList.toggle("hidden");
+      menuToggleIcon?.classList.toggle("rotate-90");
+    });
+  }
+  // Close megamenu when clicking outside
+  document.addEventListener("click", (e) => {
+    const target = e.target as Node;
+    if (
+      megamenu &&
+      !megamenu.contains(target) &&
+      !megamenuTrigger?.contains(target)
+    ) {
+      megamenu.classList.add("hidden");
+      menuToggleIcon?.classList.remove("rotate-90");
+    }
+  });
+  // Close megamenu on escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (megamenu) megamenu.classList.add("hidden");
+      menuToggleIcon?.classList.remove("rotate-90");
+    }
+  });
+</script>

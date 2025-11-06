@@ -1,11 +1,25 @@
 ---
 // Fundations
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import Wrapper from "@/components/fundations/containers/Wrapper.astro";
+// Landing Components
+import Hero from "@/components/landing/Hero.astro";
+import Stats1 from "@/components/stats/Stats1.astro";
+import ServicesOverview from "@/components/landing/ServicesPreview.astro";
+import IndustriesOverview from "@/components/landing/IndustriesPreview.astro";
+import CaseStudiesPreview from "@/components/landing/CaseStudiesPreview.astro";
+import WhyWallstone from "@/components/landing/WhyWallstone.astro";
+import TestimonialsPreview from "@/components/landing/TestimonialsPreview.astro";
+
+import BlogPreview from "@/components/landing/BlogPreview.astro";
 ---
 
 <BaseLayout>
-  <section>
-    <Wrapper variant="standard" > Hero </Wrapper>
-  </section>
+  <Hero />
+  <Stats1 />
+  <ServicesOverview />
+  <WhyWallstone />
+  <IndustriesOverview />
+  <CaseStudiesPreview />
+  <TestimonialsPreview />
+  <BlogPreview />
 </BaseLayout>
