@@ -4,7 +4,7 @@
 
 
 ## Links
-- **Theme specs:** https://lexingtonthemes.com/templates/Mulberry  
+- **Theme specs:** https://lexingtonthemes.com/templates/mulberry  
 - **Documentation:** https://lexingtonthemes.com/documentation  
 - **Changelog:** https://lexingtonthemes.com/changelog/Mulberry  
 - **Support:** https://lexingtonthemes.com/legal/support/  
