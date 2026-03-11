@@ -10,7 +10,7 @@ const posts = await Promise.all(
     title: post.data.title,
     description: post.data.description,
     date: post.data.pubDate,
-    slug: post.slug,
+    slug: post.id,
     type: "post",
     category: "Blog Post",
   }))
@@ -21,7 +21,7 @@ const services = await Promise.all(
     title: service.data.title,
     description: service.data.summary,
     date: service.data.pubDate || service.data.updatedDate,
-    slug: service.slug,
+    slug: service.id,
     type: "service",
     category: service.data.category,
   }))
@@ -31,7 +31,7 @@ const industries = await Promise.all(
   (await getCollection("industries")).map(async (industry) => ({
     title: industry.data.title,
     description: industry.data.summary,
-    slug: industry.slug,
+    slug: industry.id,
     type: "industry",
     category: "Industry",
   }))
@@ -42,7 +42,7 @@ const caseStudies = await Promise.all(
     title: caseStudy.data.title,
     description: `${caseStudy.data.client} - ${caseStudy.data.challenge}`,
     date: caseStudy.data.pubDate,
-    slug: caseStudy.slug,
+    slug: caseStudy.id,
     type: "caseStudy",
     category: caseStudy.data.industry,
   }))
@@ -52,7 +52,7 @@ const team = await Promise.all(
   (await getCollection("team")).map(async (member) => ({
     title: member.data.name,
     description: member.data.bio || member.data.role || "",
-    slug: member.slug,
+    slug: member.id,
     type: "team",
     category: "Team Member",
   }))
@@ -63,7 +63,7 @@ const infopages = await Promise.all(
     title: page.data.page,
     description: `Information page: ${page.data.page}`,
     date: page.data.pubDate,
-    slug: page.slug,
+    slug: page.id,
     type: "infopage",
     category: "Legal",
   }))

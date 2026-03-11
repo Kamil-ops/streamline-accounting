@@ -22,7 +22,7 @@ const relatedIndustries = allIndustries
     (industry) =>
       industry.data.relevantServices.some((service) =>
         frontmatter.relevantServices.includes(service)
-      ) && industry.slug !== industrySlug
+      ) && industry.id !== industrySlug
   )
   .slice(0, 2);
 ---

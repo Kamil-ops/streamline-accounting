@@ -3,7 +3,7 @@
 import Text from "@/components/fundations/elements/Text.astro";
 // Content
 const { title, summary, url } = {
-  url: "/industries/" + Astro.props.industry.slug,
+  url: "/industries/" + Astro.props.industry.id,
   title: Astro.props.industry.data.title,
   summary: Astro.props.industry.data.summary,
 };

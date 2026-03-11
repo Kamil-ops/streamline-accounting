@@ -22,7 +22,7 @@ const relatedServices = allServices
   .filter(
     (service) =>
       service.data.category === frontmatter.category &&
-      service.slug !== serviceSlug
+      service.id !== serviceSlug
   )
   .slice(0, 3); // Limit to 3 related services
 ---

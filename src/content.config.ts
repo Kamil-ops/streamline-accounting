@@ -1,5 +1,9 @@
-import { defineCollection, z } from "astro:content";
+import { defineCollection } from "astro:content";
+import { z } from "astro/zod";
+import { glob } from "astro/loaders";
+
 const team = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/team" }),
   schema: ({ image }) =>
     z.object({
       name: z.string(),
@@ -19,11 +23,13 @@ const team = defineCollection({
         .optional(),
     }),
 });
+
 const postsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      pubDate: z.date(),
+      pubDate: z.coerce.date(),
       description: z.string(),
       team: z.string(),
       image: z.object({
@@ -33,13 +39,17 @@ const postsCollection = defineCollection({
       tags: z.array(z.string()),
     }),
 });
+
 const infopages = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/infopages" }),
   schema: z.object({
     page: z.string(),
-    pubDate: z.date(),
+    pubDate: z.coerce.date(),
   }),
 });
+
 const services = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/services" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -64,11 +74,13 @@ const services = defineCollection({
           alt: z.string(),
         })
         .optional(),
-      pubDate: z.date().optional(),
-      updatedDate: z.date().optional(),
+      pubDate: z.coerce.date().optional(),
+      updatedDate: z.coerce.date().optional(),
     }),
 });
+
 const industries = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/industries" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -83,7 +95,9 @@ const industries = defineCollection({
         .optional(),
     }),
 });
+
 const caseStudies = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/caseStudies" }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -111,14 +125,15 @@ const caseStudies = defineCollection({
           alt: z.string(),
         })
         .optional(),
-      pubDate: z.date(),
+      pubDate: z.coerce.date(),
     }),
 });
+
 export const collections = {
-  team: team,
-  infopages: infopages,
+  team,
+  infopages,
   posts: postsCollection,
-  services: services,
-  industries: industries,
-  caseStudies: caseStudies,
+  services,
+  industries,
+  caseStudies,
 };
