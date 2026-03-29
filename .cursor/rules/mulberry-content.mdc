@@ -1,0 +1,15 @@
+---
+description: Mulberry content collections — Zod schemas, frontmatter, image() fields under src/content
+globs: src/content/**/*
+alwaysApply: false
+---
+
+# Content (`src/content/`)
+
+- **Schemas:** single source of truth is `src/content.config.ts`. Collection folders: `team/`, `posts/`, `infopages/`, `services/`, `industries/`, `caseStudies/` (note camelCase dir name for case studies).
+- **Do not widen schemas** (new required fields, stricter enums) without updating consuming pages/layouts and existing markdown.
+- **Images:** when the schema uses `image()`, set `image.url` and `image.alt`. Copy paths/patterns from live entries, e.g. `src/content/posts/1.md`, `src/content/team/sarah-chen.md`, `src/content/services/bookkeeping-accounting.md`.
+- **Services `category`:** must be exactly one of `Advisory`, `Compliance`, `Operations`.
+- **Services `pricing.pricingModel`:** if present, one of `one-time`, `monthly`, `hourly`, `custom`.
+- **Case study `results`:** array of objects with `label` and `value` strings (see `src/content/caseStudies/healthcare-turnaround.md`).
+- **Exported keys** used in pages: `team`, `posts`, `infopages`, `services`, `industries`, `caseStudies` — match these when calling `getCollection(...)`.

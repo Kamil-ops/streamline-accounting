@@ -1,0 +1,13 @@
+---
+description: Mulberry routing — file-based pages, dynamic [...slug], layout wiring
+globs: src/pages/**/*
+alwaysApply: false
+---
+
+# Pages (`src/pages/`)
+
+- **File-based routing:** URL paths follow the `src/pages/` tree; dynamic routes use `[...slug].astro` with `getStaticPaths` + `getCollection` as in existing files.
+- **Slug source:** for collection-backed routes, `params.slug` is typically `entry.id` (Markdown filename without extension), e.g. `src/pages/blog/posts/[...slug].astro`, `src/pages/legal/[...slug].astro`, `src/pages/services/[...slug].astro`, `src/pages/team/[...slug].astro`, `src/pages/industries/[...slug].astro`, `src/pages/case-studies/[...slug].astro`.
+- **Layouts:** pass `entry.data` or `page.data` into the matching layout (`BlogLayout`, `LegalLayout`, `ServicesLayout`, etc.) the way current pages do.
+- **Blog URLs:** listing `/blog`; posts under `/blog/posts/...`; tag routes under `blog/tags/`.
+- **Base shell:** most marketing pages use `BaseLayout` from `src/layouts/BaseLayout.astro` unless a dedicated layout already wraps the route.

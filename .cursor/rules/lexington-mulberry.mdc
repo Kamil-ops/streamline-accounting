@@ -1,0 +1,13 @@
+---
+description: Global conventions for Lexington Mulberry Astro theme — paths, fundations, minimal diffs
+alwaysApply: true
+---
+
+# Mulberry — global conventions
+
+- **Imports:** use the `@/` alias (`@/components/...`, `@/layouts/...`, `@/styles/...`) as in existing files; it maps to `src/` via `tsconfig.json`.
+- **`fundations` folder:** the directory is spelled `src/components/fundations/` (not “foundations”). Do not rename it; update files in place only.
+- **Layouts:** pages should reuse existing layouts (`BaseLayout`, `BlogLayout`, `LegalLayout`, etc.) and patterns already used in sibling routes under `src/pages/`.
+- **Lexington SEO package:** metadata UI lives under `@lexingtonthemes/seo` in `Seo.astro`; keep usage consistent with `src/components/fundations/head/BaseHead.astro`.
+- **Scope discipline:** prefer the smallest change that satisfies the request; avoid drive-by refactors, new dependencies not in `package.json`, or unrelated file edits.
+- **Styling:** Tailwind v4 theme tokens and plugins are defined in `src/styles/global.css`; prefer existing utility and token names (`accent`, `base`, etc.) over one-off magic values.
