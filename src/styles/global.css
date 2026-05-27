@@ -4,24 +4,24 @@
 @plugin "tailwind-scrollbar-hide";
 @theme {
   /* Typography */
-  --font-display: "Lora", serif;
+  --font-display: "STIX Two Text", serif;
   --font-sans: "Inter", sans-serif;
 
   /* Colors */
 
   --color-black: oklch(0.145 0 0);
   /* Accent */
-  --color-accent-50: oklch(0.96 0.02 25.25);
-  --color-accent-100: oklch(0.918 0.042 25.26);
-  --color-accent-200: oklch(0.838 0.089 26.77);
-  --color-accent-300: oklch(0.749 0.152 30.24);
-  --color-accent-400: oklch(0.672 0.221 37.86);
-  --color-accent-500: oklch(0.582 0.192 37.74);
-  --color-accent-600: oklch(0.491 0.162 37.77);
-  --color-accent-700: oklch(0.411 0.136 37.63);
-  --color-accent-800: oklch(0.322 0.105 37.99);
-  --color-accent-900: oklch(0.231 0.076 37.81);
-  --color-accent-950: oklch(0.184 0.059 38.68);
+  --color-accent-50: oklch(0.97 0.012 120);
+  --color-accent-100: oklch(0.93 0.024 120);
+  --color-accent-200: oklch(0.86 0.04 120);
+  --color-accent-300: oklch(0.76 0.058 120);
+  --color-accent-400: oklch(0.64 0.07 120);
+  --color-accent-500: oklch(0.52 0.074 120);
+  --color-accent-600: oklch(0.43 0.066 120);
+  --color-accent-700: oklch(0.34 0.054 120);
+  --color-accent-800: oklch(0.27 0.043 120);
+  --color-accent-900: oklch(0.2 0.032 120);
+  --color-accent-950: oklch(0.15 0.024 120);
 
   /* Base */
   --color-base-50: oklch(0.988 0.003 105.99);

@@ -2,7 +2,7 @@
 // Assets
 import Logo from "@/components/assets/Logo.astro";
 // Fundations
-import Button from "@/components/fundations/elements/Button.astro";
+
 import Wrapper from "@/components/fundations/containers/Wrapper.astro";
 // Icons
 import MenuToggle from "@/components/fundations/icons/Plus.astro";
@@ -14,35 +14,37 @@ import Megamenu from "@/components/global/Megamenu.astro";
   class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-base-100"
 >
   <Wrapper variant="standard">
-    <nav class="grid grid-cols-2 lg:grid-cols-3 items-center py-4">
-      <div class="flex justify-end md:justify-start">
+    <nav class="grid grid-cols-2 md:grid-cols-3 items-center py-4">
+      <a href="/" class="text-base-900">
+        <Logo class="h-8 text-base-900" />
+      </a>
+      <div class="hidden md:flex md:justify-center gap-2">
+        <a
+          class="text-base-600 hover:text-accent text-sm font-medium"
+          href="https://lexingtonthemes.com/templates/mulberry"
+        >
+          Buy Mulberry
+        </a>
+        <a
+          class="text-base-600 hover:text-accent text-sm font-medium"
+          href="/system/overview"
+        >
+          All pages
+        </a>
+      </div>
+      <div class="flex justify-end">
         <button
           id="megamenu-trigger"
           class="flex items-center space-x-1 group text-base-900 font-medium focus:outline-none"
           aria-label="Toggle megamenu"
         >
-          <span>Menu</span>
+          <span class="sr-only">Menu</span>
           <MenuToggle
             size="base"
             class="transition-transform duration-500"
             id="menu-toggle-icon"
           />
         </button>
-      </div>
-      <div class="flex md:justify-center order-first md:order-none">
-        <a href="/" class="text-base-900">
-          <Logo class="h-8 text-base-900" />
-        </a>
-      </div>
-      <div class="hidden md:flex justify-end">
-        <Button
-          variant="default"
-          size="xs"
-          isLink={true}
-          href="https://lexingtonthemes.com/templates/mulberry"
-        >
-          Buy Mulberry
-        </Button>
       </div>
     </nav>
     <Megamenu />
