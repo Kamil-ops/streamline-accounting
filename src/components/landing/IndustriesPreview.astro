@@ -21,7 +21,7 @@ const allIndustries = await getCollection("industries");
         <Text
           tag="h2"
           variant="displayMD"
-          class="text-base-900 text-balance font-display lg:mt-8"
+          class="text-base-900 text-balance font-medium tracking-tight font-display lg:mt-8"
         >
           Industries We Serve
         </Text>
@@ -41,7 +41,7 @@ const allIndustries = await getCollection("industries");
             .map((industry) => <IndustryCard industry={industry} />)
         }
         <div
-          class="bg-accent-600 p-8 flex flex-col h-full justify-between gap-8"
+          class="bg-accent-400 p-8 flex flex-col h-full justify-between gap-8"
         >
           <div>
             <Shield class="h-8 text-white" />

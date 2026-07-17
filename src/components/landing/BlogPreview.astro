@@ -19,7 +19,7 @@ const allPosts = await getCollection("posts");
         <Text
           tag="h2"
           variant="displayMD"
-          class="text-base-900 text-balance font-display lg:mt-8"
+          class="text-base-900 text-balance font-medium tracking-tight font-display lg:mt-8"
         >
           Latest Insights
         </Text>
@@ -31,7 +31,13 @@ const allPosts = await getCollection("posts");
           Stay informed with our latest articles on accounting trends, tax tips,
           and financial best practices.
         </Text>
-        <Button variant="default" size="xs" isLink={true} href="/blog" class="w-fit mt-8">
+        <Button
+          variant="default"
+          size="xs"
+          isLink={true}
+          href="/blog"
+          class="w-fit mt-8"
+        >
           View All Articles
         </Button>
       </div>
