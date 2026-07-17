@@ -39,7 +39,7 @@ const teamMembers = await getCollection("team");
       class="grid grid-cols-1 lg:grid-cols-3 mt-12 gap-2 p-8 lg:p-12 bg-base-50"
     >
       {teamMembers.slice(0, 2).map((member) => <TeamCard post={member} />)}
-      <div class="bg-accent-600 p-8 flex flex-col h-full justify-between gap-8">
+      <div class="bg-accent-500 p-8 flex flex-col h-full justify-between gap-8">
         <div>
           <Shield class="h-8 text-white" />
           <Text
