@@ -8,5 +8,5 @@ export default defineConfig({
   },
  
   site: "https://yourwebsite.com",
-  integrations: [tailwindcss(), sitemap(), mdx()],
+  integrations: [sitemap(), mdx()],
 });

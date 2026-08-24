@@ -8,5 +8,5 @@ alwaysApply: false
 
 - **Edit both only when adding/removing integrations, changing `site` URL, or changing content collection shape** in ways that require build/runtime alignment (e.g. new loader, renamed collection).
 - **`site`:** set in `astro.config.mjs`; affects sitemap and `context.site` for RSS. Keep this consistent with real deployment URL.
-- **Tailwind:** this project uses `@tailwindcss/vite` in `vite.plugins` and the same plugin in `integrations` per `astro.config.mjs` — preserve that pattern unless you deliberately migrate to a documented alternative.
+- **Tailwind:** this project uses `@tailwindcss/vite` registered in `vite.plugins` only (it is a Vite plugin, not an Astro integration) — do not add it to `integrations`.
 - **After schema changes:** update every consumer of `entry.data` / `page.data` in `src/pages/` and `src/layouts/`, and update sample markdown under `src/content/` so `npm run build` stays green.

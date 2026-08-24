@@ -6,15 +6,15 @@
 
 | Area | Details |
 |------|---------|
-| Framework | [Astro](https://astro.build/) `^6.0.0` |
-| Styling | [Tailwind CSS](https://tailwindcss.com/) `^4.1.16` via `@tailwindcss/vite` in `astro.config.mjs` (`vite.plugins` and `integrations`) |
-| Content | MDX `@astrojs/mdx` `^5.0.0`; content collections in `src/content.config.ts` with `astro:content` + `astro/zod` + `astro/loaders` `glob` |
-| RSS | `@astrojs/rss` `^4.0.13` (`src/pages/rss.xml.js`) |
-| Sitemap | `@astrojs/sitemap` `^3.6.0` |
+| Framework | [Astro](https://astro.build/) `^7.2.2` |
+| Styling | [Tailwind CSS](https://tailwindcss.com/) `^4.3.3` via `@tailwindcss/vite` in `astro.config.mjs` (`vite.plugins` only) |
+| Content | MDX `@astrojs/mdx` `^7.0.5`; content collections in `src/content.config.ts` with `astro:content` + `astro/zod` + `astro/loaders` `glob` |
+| RSS | `@astrojs/rss` `^4.0.19` (`src/pages/rss.xml.js`, sourced from the `posts` content collection) |
+| Sitemap | `@astrojs/sitemap` `^3.7.3` |
 | SEO component | `@lexingtonthemes/seo` `^0.1.0` (used in `src/components/fundations/head/Seo.astro`) |
 | Tailwind plugins (CSS) | `@tailwindcss/forms`, `@tailwindcss/typography`, `tailwind-scrollbar-hide` (see `src/styles/global.css`) |
-| Type-checking | `@astrojs/check` `^0.9.5` |
-| Language | TypeScript `^5.9.3` |
+| Type-checking | `@astrojs/check` `^0.9.10` |
+| Language | TypeScript `^6.0.3` |
 
 Path alias: `@/*` → `src/*` (`tsconfig.json`).
 
@@ -80,7 +80,7 @@ Exported collection keys: `team`, `infopages`, `posts`, `services`, `industries`
 - **Industries:** `/industries` + `/industries/[slug]`.
 - **Case studies:** `/case-studies` + `/case-studies/[slug]`.
 - **Team:** `/team` + `/team/[slug]`.
-- **RSS:** `/rss.xml` from `src/pages/rss.xml.js` (implementation uses a glob under `src/pages/blog/`; there is **no** first-party changelog route or collection in this repo).
+- **RSS:** `/rss.xml` from `src/pages/rss.xml.js` (items come from the `posts` content collection via `getCollection`, linking to `/blog/posts/{id}/`; there is **no** first-party changelog route or collection in this repo).
 - **Other static routes** (non-collection): e.g. `/`, `/about`, `/contact`, `/faq`, `/pricing`, `/locations`, `/testimonials`, `/system/*`.
 
 Dynamic segments use `[...slug].astro` where listed; params map to content `id` (filename without extension) for those routes.
