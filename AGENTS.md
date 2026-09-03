@@ -1,5 +1,7 @@
 # AGENTS.md — Mulberry (`@lexington/mulberry`)
 
+**Design rules:** [.cursor/skills/mulberry-design/SKILL.md](./.cursor/skills/mulberry-design/SKILL.md) - read before creating or changing any UI.  
+
 **Mulberry** is a multi-page marketing site for a professional services / accounting-style firm: landing hero, stats, services and industries previews, case studies, testimonials, blog, team, pricing, locations, contact, FAQ, and legal pages. Primary use case is **SaaS-style marketing and lead generation** for a services business (content and imagery are accounting/consulting oriented).
 
 ## Tech stack
